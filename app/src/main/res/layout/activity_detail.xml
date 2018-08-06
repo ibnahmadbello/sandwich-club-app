@@ -3,11 +3,11 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.udacity.sandwichclub.DetailActivity"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content">
 <LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="@dimen/activity_horizontal_margin">
 
@@ -17,12 +17,14 @@
         android:layout_height="200dp"
         android:adjustViewBounds="true"
         android:contentDescription="@string/sandwich_picture_content_description"
-        android:scaleType="centerCrop" />
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin">
 
         <TextView
             android:id="@+id/also_known_label_tv"
@@ -30,21 +32,24 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="@string/detail_also_known_as_label"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textSize="@dimen/textSizePort"/>
 
         <TextView
             android:id="@+id/also_known_tv"
             android:layout_width="0dp"
             android:layout_weight="2"
             android:layout_height="wrap_content"
-            tools:text="@tools:sample/lorem"/>
+            tools:text="@tools:sample/lorem"
+            android:textSize="@dimen/textSizePort"/>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin">
 
         <TextView
             android:id="@+id/place_of_origin_tv"
@@ -52,13 +57,15 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="@string/detail_place_of_origin_label"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textSize="@dimen/textSizePort"/>
 
         <TextView
             android:id="@+id/origin_tv"
             android:layout_width="0dp"
             android:layout_weight="2"
             android:layout_height="wrap_content"
+            android:textSize="@dimen/textSizePort"
             tools:text="@tools:sample/lorem"/>
 
     </LinearLayout>
@@ -66,7 +73,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin">
 
         <TextView
             android:id="@+id/description_label_tv"
@@ -74,21 +82,24 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="@string/detail_description_label"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textSize="@dimen/textSizePort"/>
 
         <TextView
             android:id="@+id/description_tv"
             android:layout_width="0dp"
             android:layout_weight="2"
             android:layout_height="wrap_content"
-            tools:text="@tools:sample/lorem"/>
+            tools:text="@tools:sample/lorem"
+            android:textSize="@dimen/textSizePort"/>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin">
 
         <TextView
             android:id="@+id/ingredients_label_tv"
@@ -96,14 +107,16 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="@string/detail_ingredients_label"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textSize="@dimen/textSizePort"/>
 
         <TextView
             android:id="@+id/ingredients_tv"
             android:layout_width="0dp"
             android:layout_weight="2"
             android:layout_height="wrap_content"
-            tools:text="@tools:sample/lorem"/>
+            tools:text="@tools:sample/lorem"
+            android:textSize="@dimen/textSizePort"/>
 
     </LinearLayout>
 
